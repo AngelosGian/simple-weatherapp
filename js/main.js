@@ -22,15 +22,18 @@ navigator.geolocation.getCurrentPosition((position) => {
            document.querySelector('#description').innerText = weatherDescription;
            document.querySelector('#description-type').innerText = descriptionType;
 
-        //    let icon = document.createElement('span')
+           let icon = document.createElement('em')
+           icon.classList.add('wi')
         //    document.querySelector('#description-type').appendChild(icon);
 
            if(descriptionType == "Clouds"){
-            document.querySelector('.wi').setAttribute('class','wi-cloudy');
-            // icon
-            
-
+            icon.classList.add('wi-cloudy')      
+            document.querySelector('#description-type').appendChild(icon) 
+          } else if(descriptionType == "Clear"){
+             icon.classList.add('wi-day-sunny')
+             document.querySelector('#description-type').appendChild(icon)
            }
+
 
            console.log(weatherDescription)
          })
