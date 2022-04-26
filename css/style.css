@@ -29,7 +29,9 @@ p{
 /* LAYOUT
 /*******************************************/
 
-
+#description {
+  text-transform: capitalize;
+}
 
 
 /******************************************
@@ -37,4 +39,44 @@ p{
 /*******************************************/
 #location::after {
   content: ", ";
+}
+
+.clearskies{
+  background: url(../images/sunny1.jpg) no-repeat;
+  background-size: cover;
+}
+
+.few-clouds{
+  background: url(../images/clearskies.jpg) no-repeat;
+  background-size: cover;
+}
+
+.skattered-clouds{
+  background: url(../images/scatteredclouds.jpg) no-repeat;
+  background-size: cover;
+}
+
+.shower-rain{
+  background: url(../images/showerrain.jpg) no-repeat;
+  background-size: cover;
+}
+
+.rain{
+  background: url(../images/rain.jpg) no-repeat;
+  background-size: cover;
+}
+
+.thunderstorm{
+  background: url(../images/thunderstorm.jpg) no-repeat;
+  background-size: cover;
+}
+
+.snow{
+  background: url(../images/snow.jpg) no-repeat;
+  background-size: cover;
+}
+
+.fog{
+  background: url(../images/mist.jpg) no-repeat;
+  background-size: cover;
 }
