@@ -59,6 +59,7 @@ navigator.geolocation.getCurrentPosition((position) => {
               icon.classList.add('wi-rain')      
               document.querySelector('#description').appendChild(icon)
               break;  
+            case 'thunderstorm with light rain':
             case 'thunderstorm':
               document.querySelector('body').classList.add('thunderstorm');
               icon.classList.add('wi-thunderstorm')      
@@ -77,7 +78,6 @@ navigator.geolocation.getCurrentPosition((position) => {
             default:
               document.querySelector('#description').innerText = 'Not defined'
           }
-
 
 
       
