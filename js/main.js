@@ -39,11 +39,7 @@ navigator.geolocation.getCurrentPosition((position) => {
               document.querySelector('body').classList.add('few-clouds');
               document.querySelector('#description').appendChild(icon).classList.add('wi-cloud')
               break;
-            case 'few clouds':
-              document.querySelector('body').classList.add('skattered-clouds');
-              icon.classList.add('wi-cloudy')      
-              document.querySelector('#description').appendChild(icon)
-              break;  
+            case 'scattered clouds':  
             case 'broken clouds':
               document.querySelector('body').classList.add('skattered-clouds');
               icon.classList.add('wi-cloudy')      
